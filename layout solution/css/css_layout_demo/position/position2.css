@@ -1,0 +1,20 @@
+.container {
+    position: relative;
+    border: solid 1.5px green;
+}
+
+nav {
+    float: left;
+    width: 25%;
+    border: solid 1.5px rgb(201, 77, 97);
+}
+
+section {
+    /* position is static by default */
+    margin-left: 25%;
+    border: solid 1.5px orange;
+}
+
+.sec {
+    color: purple;
+}

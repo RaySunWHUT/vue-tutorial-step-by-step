@@ -1,0 +1,24 @@
+.box {
+    float: left;
+    width: 200px;
+    height: 100px;
+    margin: 1em;
+    border: solid 2px green;
+}
+
+.after-box {
+    clear: left;
+    border: solid 2px orange;
+}
+
+.box1 {
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    margin: 1em;
+    border: solid 2px green;
+}
+
+.after-box1 {
+    border: solid 2px orange;
+}

@@ -1,0 +1,25 @@
+.container {
+    border: solid 2px green;
+    display: -webkit-flex;
+    display: flex;
+}
+
+nav {
+    border: solid 2px palevioletred;
+    color: palevioletred;
+    width: 200px;
+}
+
+.flex-column {
+    border: solid 2px purple;
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+.sec {
+    color: purple;
+}
+
+section {
+    border: solid 2px orange;
+}

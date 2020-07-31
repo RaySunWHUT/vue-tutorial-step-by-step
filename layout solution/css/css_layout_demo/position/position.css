@@ -1,0 +1,36 @@
+.container {
+    position: relative;
+    border: solid 1.5px green;
+}
+
+nav {
+    position: absolute;
+    left: 0px;
+    width: 200px;
+    border: solid 1.5px rgb(201, 77, 97);
+}
+
+section {
+    /* position is static by default */
+    margin-left: 200px;
+    border: solid 1.5px orange;
+}
+
+.sec {
+    color: purple;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    border: solid 1.5px lightgreen;
+}
+
+body {
+    margin-bottom: 120px;
+}

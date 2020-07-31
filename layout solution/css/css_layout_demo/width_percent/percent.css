@@ -1,0 +1,11 @@
+.article {
+    border: solid 2px orange;
+    overflow: auto;
+    /* 支持IE6+ */
+    zoom: 1;
+}
+
+.article img {
+    float: right;
+    width: 50%;
+}

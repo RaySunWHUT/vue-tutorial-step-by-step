@@ -1,0 +1,22 @@
+.container {
+    position: relative;
+    border: solid 1.5px green;
+}
+
+nav {
+    float: left;
+    width: 200px;
+    border: solid 1.5px rgb(201, 77, 97);
+}
+
+section {
+    /* position is static by default */
+    margin-left: 200px;
+    border: solid 1.5px orange;
+    clear: left;
+    /* 当浮动元素比非浮动元素高度/宽度等要大时, 需要使用clear */
+}
+
+.sec {
+    color: purple;
+}

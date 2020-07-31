@@ -1,0 +1,19 @@
+img {
+    float: right;
+    margin: 0 0 1em 1em;
+}
+
+.ok {
+    border: solid 2px orange;
+}
+
+.clear {
+    border: solid 2px green;
+}
+
+.clearfix {
+    border: solid 2px blue;
+    overflow: auto;
+    /* 支持IE6+ */
+    zoom: 1;
+}

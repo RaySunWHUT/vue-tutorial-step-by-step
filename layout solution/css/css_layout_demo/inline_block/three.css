@@ -1,0 +1,10 @@
+.three-column {
+    padding: 1em;
+    -moz-column-count: 3;
+    -moz-column-gap: 1em;
+    -webkit-column-count: 3;
+    column-count: 3;
+    /* 列间隙 */
+    column-gap: 1em;
+    border: solid 2px orange;
+}

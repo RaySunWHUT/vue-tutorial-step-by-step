@@ -1,0 +1,30 @@
+.container {
+    border: solid 2px green;
+}
+
+nav {
+    border: solid 2px palevioletred;
+    color: palevioletred;
+    display: inline-block;
+    /* 垂直对齐 */
+    vertical-align: top;
+    /* 设置每一列的宽度 */
+    width: 25%;
+}
+
+.column {
+    border: solid 2px purple;
+    display: inline-block;
+    vertical-align: top;
+    /* width: 75%; 因为有2px的border，故width百分比降低. */
+    /* 不同标签间使用 &nbsp; 会使列之间产生空格 */
+    width: 72%;
+}
+
+.sec {
+    color: purple;
+}
+
+section {
+    border: solid 2px orange;
+}

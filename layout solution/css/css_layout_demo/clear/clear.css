@@ -1,0 +1,23 @@
+.box {
+    float: left;
+    width: 200px;
+    height: 100px;
+    margin: 1em;
+    border: solid 2px green;
+}
+
+.box1 {
+    float: left;
+    width: 200px;
+    height: 100px;
+    margin: 1em;
+    border: solid 2px green;
+}
+
+section {
+    border: solid 2px orange;
+}
+
+.after-box {
+    clear: left;
+}

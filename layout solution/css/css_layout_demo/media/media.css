@@ -1,0 +1,35 @@
+.container {
+    position: relative;
+    border: solid 1.5px green;
+}
+
+@media screen and (min-width: 600px) {
+    nav {
+        float: left;
+        width: 25%;
+    }
+    section {
+        /* position is static by default */
+        margin-left: 25%;
+    }
+}
+
+@media screen and (max-width:599px) {
+    nav li {
+        display: inline;
+    }
+}
+
+nav {
+    border: solid 1.5px rgb(201, 77, 97);
+    /* width: 25%; */
+}
+
+section {
+    border: solid 1.5px orange;
+    /* margin-left: 25%; */
+}
+
+.sec {
+    color: purple;
+}

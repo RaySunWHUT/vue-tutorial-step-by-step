@@ -1,0 +1,14 @@
+.container {
+    height: 300px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    border: solid 2px green;
+}
+
+.content {
+    border: solid 2px orange;
+}
