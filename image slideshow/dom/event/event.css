@@ -1,0 +1,19 @@
+.hello {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    border: solid 1px red;
+    padding: 50px;
+}
+
+.ok {
+    width: 200px;
+    height: 200px;
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
+    border: solid 1px brown;
+    padding: 50px;
+}

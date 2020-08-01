@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event practice</title>
+    <link rel="stylesheet" href="./event.css"></link>
+</head>
+
+<body onload="check()">
+    <div class="container">
+        <p id="p1">
+            This is a good practice.
+        </p>
+        <!-- this 只针对当前HTML元素有效 -->
+        <h1 onclick="this.innerHTML = 'Hello world!'">h1 tag show here.</h1>
+        <span onclick="changeText(this)">
+            Click me!
+        </span>
+
+        <button id="mybt">focus</button>
+
+        <input type="text" id="fname" onchange="upperCase()">
+
+        <div class="hello" onmouseover="this.innerHTML = 'mouse up!'" onmouseout="this.innerHTML = 'mouse down'">over me!</div>
+
+        <!-- backgroundColor遵循驼峰命名法 -->
+        <div class="ok" onmousedown="this.innerHTML = 'mouse down'; this.style.backgroundColor = 'orange';" onmouseup="this.innerHTML = 'mouse up'; this.style.backgroundColor = 'aliceblue';">thank you!</div>
+
+    </div>
+</body>
+<script>
+    function changeText(e) {
+        e.innerHTML = "click result!"
+    }
+
+    function displayDate() {
+        console.log(Date())
+    }
+
+    function check() {
+        console.log("onload event.");
+    }
+
+    function upperCase(e) {
+
+        // var content = e.innerHTML;
+
+        // for (var i = 0; i < content.length; i++) {
+
+        //     if (content[i] > 65 && content[i] < 90) {
+        //         content[i] = content[i] + 32;
+        //     }
+
+        // }
+
+        var e = document.getElementById("fname");
+        e.value = e.value.toUpperCase();
+
+        // 无效
+        // e.innerHTML = e.innerHTML.toUpperCase();
+
+    }
+
+    // 为对应id的标签分配事件
+    document.getElementById("mybt").onclick = function() {
+        displayDate()
+    };
+</script>
+
+</html>

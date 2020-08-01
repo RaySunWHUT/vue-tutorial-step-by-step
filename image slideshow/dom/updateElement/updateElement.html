@@ -11,6 +11,8 @@
     <div class="container" id="main">
         <p id="p1">Hello world!</p>
 
+        <p id="p2">Weclome!</p>
+
         <input type="button" onclick="changeBgColor()" value="Change background color" />
         <input type="button" onclick="updateText()" value="update" />
     </div>
@@ -24,20 +26,48 @@
 
     // 元素对象可直接访问style, 修改样式
     e.style.color = "blue";
-
     e.style.fontWeight = "bold";
 
+    /* 创建HTML元素 */
     // 创建标签
     var span_element = document.createElement("span");
-    // 创建标签包裹的内容
+    // 创建标签内的内容
     var node = document.createTextNode("This is ok mode.");
     // 将内容加入标签内
     span_element.appendChild(node);
 
-    // 加入到HTML DOM树中
     var el = document.getElementById("main");
+    // 将新元素作为父元素的最后一个子元素, 加入到HTML DOM树中
     el.appendChild(span_element);
 
+    var p2 = "p2";
+    var child = document.getElementById(p2);
+
+    // 在一个子节点后, 插入HTML元素
+    el.insertBefore(span_element, child);
+
+    /* 删除HTML元素 */
+    // 先找到要删除的HTML元素的父(parent)HTML元素
+    var parent = document.getElementById("main");
+    // 找到要删除的HTML元素
+    var child1 = document.getElementById("p1");
+    // 将parent的此child移除
+    parent.removeChild(child1);
+
+    // 亦可通过访问parentNode直接进行移除
+    // child1.parentNode.removeChild(child1);
+
+    /* 替换HTML元素 */
+    var newer = document.createElement("p");
+    var node = document.createTextNode("replace result!");
+    newer.appendChild(node);
+
+    var parent2 = document.getElementById("main");
+    var child2 = document.getElementById("p2");
+
+    // 以下2种方式方式选其一即可
+    // parent2.replaceChild(newer, child2);
+    child2.parentNode.replaceChild(newer, child2);
 
     function changeBgColor() {
         document.body.style.backgroundColor = 'aliceblue';
