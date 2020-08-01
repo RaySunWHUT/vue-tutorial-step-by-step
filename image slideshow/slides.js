@@ -1,5 +1,7 @@
 var i = 0;
 var images = [];
+
+// 3s
 var time = 3000;
 
 
@@ -25,10 +27,12 @@ function slide() {
 
     }
 
+    // 设置执行时间
     setTimeout("slide()", time);
 
     window.onload = slide;
 
 }
 
+// 注意, 需要执行函数
 slide()
