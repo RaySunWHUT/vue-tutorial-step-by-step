@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Practice</title>
+    <link rel="stylesheet" ref="./dom.css"></link>
+</head>
+<div id="hello">
+    Hello world!
+    <a ref="www.baidu.com" id="aid">baidu</a>
+</div>
+
+<body>
+
+</body>
+<script>
+    var id = "hello";
+    var e = document.getElementById(id);
+
+    console.log(e);
+
+    console.log(e.innerHTML);
+
+    // 若想Javascript的字符串中的"生效, 需加 \ 进行转义
+    var label = "<a ref=\"www.baidu.com\" id=\"aid\">baidu</a>";
+
+    e.innerHTML = "Hello Sunny!" + label;
+    console.log(e.innerHTML);
+
+    console.log(e.parentNode);
+
+    console.log(e.childNodes);
+
+    var aid = "aid";
+    var el = document.getElementById(aid);
+    console.log(el.attributes);
+
+    console.log("移除child nodes");
+    e.removeChild(el);
+    console.log(e.childNodes);
+
+    console.log("添加child nodes");
+    e.appendChild(el);
+    console.log(e.childNodes);
+</script>
+
+</html>

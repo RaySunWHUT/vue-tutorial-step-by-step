@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <p id="intro">
+            Hello world!
+        </p>
+    </div>
+    <p>This is a tag p label.</p>
+
+</body>
+<script>
+    var txt = document.getElementById("intro");
+    doc = txt.innerHTML;
+
+    document.write(doc + "I'm glad to see you.");
+
+    document.write(txt.firstChild.nodeValue);
+    document.write(txt.nodeName);
+
+    var p = document.getElementsByTagName("p");
+    console.log(p);
+
+    var local_p = document.getElementById("main").getElementsByTagName("p");
+    console.log(local_p);
+</script>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <p id="p1">Hello world!</p>
+
+        <input type="button" onclick="changeBgColor()" value="Change background color" />
+        <input type="button" onclick="updateText()" value="update" />
+    </div>
+
+
+</body>
+<script>
+    var p1 = "p1";
+    var e = document.getElementById(p1);
+    e.innerHTML = "New World!"
+
+    // 元素对象可直接访问style, 修改样式
+    e.style.color = "blue";
+
+    e.style.fontWeight = "bold";
+
+    // 创建标签
+    var span_element = document.createElement("span");
+    // 创建标签包裹的内容
+    var node = document.createTextNode("This is ok mode.");
+    // 将内容加入标签内
+    span_element.appendChild(node);
+
+    // 加入到HTML DOM树中
+    var el = document.getElementById("main");
+    el.appendChild(span_element);
+
+
+    function changeBgColor() {
+        document.body.style.backgroundColor = 'aliceblue';
+    }
+
+    function updateText() {
+        document.getElementById("p1").innerHTML = "Come on!";
+    }
+</script>
+
+</html>
