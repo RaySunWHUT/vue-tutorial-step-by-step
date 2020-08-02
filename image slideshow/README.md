@@ -2,6 +2,8 @@
 
 ​	*HTML DOM 是关于如何**获取**、**修改**、**添加**或 **删除** HTML 元素的标准。*
 
+
+
 ## 	DOM节点
 
  1. #### 文档节点:
@@ -63,6 +65,8 @@
 
 详情请参见 W3school [HTML DOM](https://www.w3school.com.cn/htmldom/dom_methods.asp) .
 
+
+
 ## HTML DOM 实例
 
 #### Anchor对象
@@ -88,6 +92,10 @@
 #### Table、TableHeader、TableRow、TableData对象
 
 #### Window对象
+
+
+
+如果又任何问题，随时查看 **references** 即可。
 
 # References:
 
