@@ -102,3 +102,5 @@
 1. https://www.w3school.com.cn/htmldom/dom_methods.asp
 2. https://www.youtube.com/watch?v=4YQ4svkETS0
 3. https://www.youtube.com/watch?v=jAYjisNyhgc
+4. https://www.youtube.com/watch?v=KcdBOoK3Pfw
+5. https://www.youtube.com/watch?v=wWWNrANNO1k
