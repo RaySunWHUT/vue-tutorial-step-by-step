@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>full slides</title>
+</head>
+
+<body onload="accessKey()">
+    <div class="container">
+        <input type="button" value="open and write" onclick="createDoc()">
+        <p><a id="a1" href="https://www.baidu.com">Baidu</a></p>
+        <button onclick="clickDown()">点我获取href</button>
+    </div>
+    <p id="hello"></p>
+
+    <p><a id="w3" href="http://www.w3school.com.cn/">W3School.com.cn</a>(请使用 Alt + p 给该链接赋予焦点)</p>
+
+</body>
+<script>
+    function createDoc() {
+
+        var newDoc = document.open("text/html", "replace");
+        var txt = "<html><body>learning DOM is very interesting!</body></html>"
+        newDoc.write(txt);
+        newDoc.close();
+
+    };
+
+    function clickDown() {
+
+        var x = document.getElementById("a1").href;
+
+        document.getElementById("hello").innerHTML = x;
+
+    };
+
+    // 为超链接添加快捷键
+    function accessKey() {
+        document.getElementById('w3').accessKey = "p";
+    };
+
+
+    document.write(document.title + "<br/>");
+    document.write(document.URL + "<br/>");
+    document.write(document.referrer + "<br/>");
+    document.write(document.domain + "<br/>");
+</script>
+
+</html>

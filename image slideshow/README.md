@@ -63,31 +63,31 @@
 
 详情请参见 W3school [HTML DOM](https://www.w3school.com.cn/htmldom/dom_methods.asp) .
 
+## HTML DOM 实例
 
+#### Anchor对象
 
-1. ## Anchor对象
+#### Document对象
 
-2. ## Document对象
+#### Event对象
 
-3. ## Event对象
+#### Form 、Input 对象
 
-4. ## Form 、Input 对象
+#### Frame、Frameset、IFrame 对象
 
-5. ## Frame、Frameset、IFrame 对象
+#### Image对象
 
-6. ## Image对象
+#### Location对象
 
-7. ## Location对象
+#### Navigator对象
 
-8. ## Navigator对象
+#### Option、Select对象
 
-9. ## Option、Select对象
+#### Screen对象
 
-10. ## Screen对象
+#### Table、TableHeader、TableRow、TableData对象
 
-11. ## Table、TableHeader、TableRow、TableData对象
-
-12. ## Window对象
+#### Window对象
 
 # References:
 
