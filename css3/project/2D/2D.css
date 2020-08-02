@@ -1,0 +1,160 @@
+.container {
+    border: solid 2px black;
+    position: relative;
+}
+
+.sun {
+    width: 100px;
+    height: 75px;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.sun {
+    transform: translate(50px, 100px);
+    -ms-transform: translate(50px, 100px);
+    -webkit-transform: translate(50px, 100px);
+    -o-transform: translate(50px, 100px);
+}
+
+
+/* .sun {
+    transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+} */
+
+
+/* .sun {
+    transform: scale(2, 4);
+    -ms-transform: scale(2, 4);
+    -webkit-transform: scale(2, 4);
+    -o-transform: scale(2, 4);
+    -moz-transform: scale(2, 4);
+} */
+
+
+/* .sun {
+    transform: skew(30deg, 20deg);
+    -ms-transform: skew(30deg, 20deg);
+    -webkit-transform: skew(30deg, 20deg);
+    -o-transform: skew(30deg, 20deg);
+    -moz-transform: skew(30deg, 20deg);
+} */
+
+
+/* .sun {
+    transform: matrix(0.866, 0.5, -0.5, 0.866, 0, 0);
+    -ms-transform: matrix(0.866, 0.5, -0.5, 0.866, 0, 0);
+    -moz-transform: matrix(0.866, 0.5, -0.5, 0.866, 0, 0);
+    -webkit-transform: matrix(0.866, 0.5, -0.5, 0.866, 0, 0);
+    -o-transform: matrix(0.866, 0.5, -0.5, 0.866, 0, 0);
+} */
+
+.ray {
+    width: 100px;
+    height: 75px;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.ray {
+    /* 过渡: 属性 过渡时间 时间函数(linear ease-in-out) 延迟 */
+    transition: width 2s, height 2s;
+    -moz-transition: width 2s, height 2s, -moz-transform 2s;
+    /* Firefox 4 */
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+    /* Safari and Chrome */
+    -o-transition: width 2s, height 2s, -o-transform 2s;
+    /* Opera */
+}
+
+.ray:hover {
+    width: 200px;
+    height: 200px;
+    transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    /* Firefox 4 */
+    -webkit-transform: rotate(180deg);
+    /* Safari and Chrome */
+    -o-transform: rotate(180deg);
+    /* Opera */
+}
+
+
+/* 实现动画 */
+
+@keyframes first {
+    /* from {
+        background: violet;
+    }
+    50% {
+        background: blue;
+    }
+    to {
+        background: greenyellow;
+    } */
+    0% {
+        background: red;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background: yellow;
+        left: 200px;
+        top: 0px;
+    }
+    50% {
+        background: blue;
+        left: 200px;
+        top: 200px;
+    }
+    75% {
+        background: green;
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        background: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@-webkit-keyframes first {
+    from {
+        background: violet;
+    }
+    to {
+        background: greenyellow;
+    }
+}
+
+.animation {
+    /* margin-top: 100px; */
+    animation: first 5s;
+    -webkit-animation: first 5s;
+    animation: first 5s ease-in-out 0.5s infinite alternate;
+    /* animation-play-state: running; */
+    color: white;
+    position: absolute;
+}
+
+.hello {
+    width: 300px;
+    height: 300px;
+    background: purple;
+    color: white;
+    /* 过渡: 属性 过渡时间 时间函数(linear ease-in-out) 延迟 */
+    transition: transform 2s ease-in-out;
+}
+
+.hello:hover {
+    transform: translateX(400px) translateY(200px);
+}

@@ -1,0 +1,38 @@
+.container {
+    border: 2px solid;
+    border-radius: 25px;
+    /* 支持旧版firefox */
+    -moz-border-radius: 25px;
+    /* 右 下 透明度 color */
+    box-shadow: 10px 10px 5px #888888;
+}
+
+.round {
+    /* 若要border-image生效, 需要一定的边框宽度 */
+    border: 15px solid transparent;
+    width: 300px;
+    padding: 10px 20px;
+    /* stretch或round */
+    border-image: url(../images/border.png) 30 30 stretch;
+    /* Safari 和 Chrome */
+    -webkit-border-image: url(../images/border.png) 30 30 stretch;
+}
+
+.blue {
+    background: url(../images/all_blue.jpg);
+    background-size: 300px 300px;
+    -moz-background-size: 300px 300px;
+    /* 老版本的 Firefox */
+    background-repeat: no-repeat;
+    padding-top: 300px;
+}
+
+.content {
+    height: 400px;
+    background: url(../images/piece.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-background-origin: border-box;
+    /* Safari */
+    background-origin: border-box;
+}

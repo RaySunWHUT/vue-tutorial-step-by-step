@@ -13,20 +13,25 @@ const size = images[0].clientWidth;
 slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
 nextBtn.addEventListener('click', () => {
+
     if (counter >= images.length - 1) {
         return;
     }
+
     slide.style.transition = 'transform 0.4s ease-in-out';
     counter++;
+
     slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
 });
 
 
 prevBtn.addEventListener('click', () => {
+
     if (counter <= 0) {
         return;
     }
+
     slide.style.transition = 'transform 0.4s ease-in-out';
     counter--;
     slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
@@ -35,6 +40,7 @@ prevBtn.addEventListener('click', () => {
 
 
 slide.addEventListener('transitionend', () => {
+
     if (images[counter].id === 'lastClone') {
         slide.style.transition = "none";
         counter = images.length - 2;
@@ -46,4 +52,5 @@ slide.addEventListener('transitionend', () => {
         counter = images.length - counter;
         slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
     }
+
 });
