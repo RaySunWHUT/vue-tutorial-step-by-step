@@ -15,6 +15,7 @@ images[4] = './images/img5.jpg';
 // change image
 function slide() {
 
+    // 通过HTML元素的name属性找到
     document.slides.src = images[i];
 
     if (i < images.length - 1) {
