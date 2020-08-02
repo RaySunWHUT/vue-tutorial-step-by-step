@@ -1,0 +1,44 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 38%;
+    min-width: 560px;
+    margin: auto;
+    overflow: hidden;
+    /* border: 3px solid black; */
+    position: relative;
+}
+
+.slide {
+    display: flex;
+    width: 100%;
+    height: 450px;
+}
+
+#prevBtn {
+    border: solid 2px black;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 3%;
+    font-size: 30px;
+    color: white;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#nextBtn {
+    border: solid 2px black;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 3%;
+    font-size: 30px;
+    color: white;
+    opacity: 0.8;
+    cursor: pointer;
+}
